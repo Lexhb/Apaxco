@@ -74,8 +74,8 @@ ggplot(poblacion) +
   geom_col(aes(x=reorder(NOM_LOC, POBTOT), y= POBTOT, fill = NOM_LOC)) +
   coord_flip() +theme(legend.position = "none") +
   geom_text(aes(x = reorder(NOM_LOC, POBTOT), y = POBTOT, label = POBTOT),
-            position = position_dodge(width = 1), size = 4,
-            vjust = 0.5, hjust = 0) +
+            position = position_dodge(width = 1), size = 3,
+            vjust = 0.5, hjust = 1) +
   labs(title = "Apaxco, Estado de México",
        subtitle = "Población por localidad. 2020",
        caption = "Fuente: Elaboración propia con datos de INEGI, 
